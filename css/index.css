@@ -90,7 +90,8 @@ body {
 
 #containerMensagemSS{
     width: 100px;
-    position: absolute;    
+    position: absolute;
+    right: -2000px;    
 }
 
 .containerGifLoadingSS{
