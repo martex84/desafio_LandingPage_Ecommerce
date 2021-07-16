@@ -4,14 +4,13 @@ const containerMensagemEmail = "containerMensagemSS"
 const mensagemEmail = "textoMensagemSS";
 
 function enviaEmail() {
-    const elementEmail = document.getElementById(inputEmail);
+    const elementEmail = document.getElementById(inputEmail);    
     const valorInputEmail = JSON.stringify(elementEmail.value);  
     localStorage.setItem('valorEmail', valorInputEmail);
-    mostrarComponente(containerMensagemEmail)
-    moverComponenteCentroTela(containerMensagemEmail);
-    
-
-
+    mostrarEsconderComponente(containerMensagemEmail,'block')
+    moverComponenteCentroTela(containerMensagemEmail);   
+    calcularTempoMensagem()
+    setTimeout(()=>{mostrarEsconderComponente(containerMensagemEmail,'none')},5000)
     pararForm();
 }
 
@@ -30,8 +29,14 @@ function moverComponenteCentroTela(componente) {
     componenteFinal.style.right = `${valorFinal}px`;
 }
 
-function mostrarComponente(componente){
+function mostrarEsconderComponente(componente,valor){
     let componenteFinal = document.getElementById(componente);
-    componenteFinal.style.display = `block`;
-    console.log(componenteFinal)    
+    componenteFinal.style.display = valor;      
+}
+
+function calcularTempoMensagem(){
+    let elementMensagem = document.getElementById(mensagemEmail);    
+    setTimeout(()=>{
+        elementMensagem.innerHTML= `Enviado!`;
+    },3000);    
 }

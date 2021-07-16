@@ -282,8 +282,7 @@ body {
 
 #containerMensagemSS{
     width: 100px;
-    position: absolute;
-    bottom: -450px;
+    position: absolute;    
     display: none;
     text-align: center;
     font-weight: bold; 
