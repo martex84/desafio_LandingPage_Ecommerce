@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    background-image: url("../assets/backgroundPet.png");
+}
+
+body {
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width:767.98px) {
+
+    html {
+        background-size: 50%;
+    }
+
+}
+
+/*
+    Primeira Section
+*/
+
+#primeiraSection {
+    margin-bottom: 100px;
+    min-height: 100vh;
+}
+
+.containerPropagandaPrimeiraSection {
+    height: 450px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.containerLogoPrimeiraSection {
+    min-width: 500px;
+}
+
+.containerTextoPrimeiraSection {
+    padding: 0 10px;
+}
+
+.containerTextoPrimeiraSection>h1 {
+    font-size: 2.5em;
+    text-align: center;
+    text-shadow: 1px 2px #A52A2A;
+}
+
+.containerTextoPrimeiraSection>p {
+    margin-top: 10px;
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.containerProdutosPrimeiraSection {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.containerItemPropagandaPS {
+    width: 300px;
+    height: 390px;
+    margin: auto;
+}
+
+.containerImagemPropagandaPS {
+    height: 290px;
+}
+
+.containerTextoPropagandaPS {
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerTextoPropagandaPS>p {
+    font-size: 1.8em;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media (max-width:1000px) {
+
+    .containerLogoPrimeiraSection {
+        min-width: 350px;
+    }
+
+    .containerProdutosPrimeiraSection {
+        grid-template-columns: auto auto;
+        grid-template-areas: "item2ProdutoPS item1ProdutoPS""item3ProdutoPS item3ProdutoPS";
+    }
+
+    .item1ProdutoPS {
+        grid-area: item1ProdutoPS;
+    }
+
+    .item2ProdutoPS {
+        grid-area: item2ProdutoPS;
+    }
+
+    .item3ProdutoPS {
+        margin-top: 20px;
+        grid-area: item3ProdutoPS;
+    }    
+
+}
+
+@media (max-width:800px) {
+
+    .containerPropagandaPrimeiraSection {
+        flex-direction: column;
+        height: 600px;
+    }
+
+    .containerLogoPrimeiraSection {
+        width: 400px;
+    }
+
+    .containerItemPropagandaPS {
+        width: 280px;
+        height: 380px;
+    }
+
+    .containerImagemPropagandaPS {
+        height: 280px;
+    }
+
+    .containerTextoPropagandaPS {
+        height: 80px;
+    }
+
+}
+
+@media (max-width:600px) {
+
+    .containerLogoPrimeiraSection {
+        width: 300px;
+    }
+
+    .containerItemPropagandaPS {
+        width: 200px;
+        height: 270px;
+    }
+
+    .containerImagemPropagandaPS {
+        height: 200px;
+    }
+
+    .containerTextoPropagandaPS {
+        height: 50px;
+    }
+
+    .containerTextoPropagandaPS>p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width:480px) {
+
+    .containerItemPropagandaPS {
+        width: 200px;
+        height: 300px;
+    }
+
+    .containerImagemPropagandaPS {
+        width: 150px;
+        height: 180px;
+        margin: auto;
+    }
+
+    .containerTextoPropagandaPS {
+        height: 40px;
+    }
+
+    .containerTextoPropagandaPS>p {
+        font-size: 1em;
+    }
+}
+
+/*
+    Segunda Section
+*/
+
+#segundaSection {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.containerFormSegundaSection {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerTextoSP>h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+#formEmailColetaSS {
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#inputEmailColetaSS {
+    width: 80%;
+    height: 50px;
+    text-align: center;
+    font-size: 2em;
+    border: 2px solid #006400;
+}
+
+#inputSubmitColetaSS {
+    width: 50%;
+    height: 50px;
+    margin-top: 20px;
+    font-size: 2em;
+}
+
+.containerPropagandaSegundaSection {
+    margin: 50px auto 0 auto;
+
+}
+
+.containerImagemPropagandaSS {
+    width: 300px;
+    margin: auto;
+}
+
+@media (max-width:800px) {
+    .containerTextoSP>h2 {
+        font-size: 1.5em;
+    }
+
+    #inputEmailColetaSS {
+        height: 40px;
+        font-size: 1.5em;
+    }
+
+    #inputSubmitColetaSS {
+        height: 40px;
+        font-size: 1.5em;
+    }
+}
+
+/*
+    Footer
+*/
+
+#footerPrincipal {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(169, 169, 169);
+    font-size: 1.2em;
+}
+
+/*
+    Utilitários
+*/
+
+.configuracaoPadraoSection {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.containerPrincipal {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.padraoCorPrimaria {
+    color: #F0F8FF;
+}
+
+.padraoCorSecundario {
+    color: #006400;
+}
+
+.image {
+    width: 100%;
+}
+
+.separadorItem {
+    border-top: 5px solid rgb(169, 169, 169);
+}
+
+.wallpaperTransparente {
+    background-color: rgba(169, 169, 169, 0.8);
+    border: 5px solid rgb(169, 169, 169);
+}
