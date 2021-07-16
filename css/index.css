@@ -27,6 +27,7 @@ body {
 */
 
 #primeiraSection {
+    margin-top: 40px;
     margin-bottom: 100px;
     min-height: 100vh;
 }
@@ -94,6 +95,10 @@ body {
         min-width: 350px;
     }
 
+    .containerPropagandaPrimeiraSection {
+        height: 400px;
+    }
+
     .containerProdutosPrimeiraSection {
         grid-template-columns: auto auto;
         grid-template-areas: "item2ProdutoPS item1ProdutoPS""item3ProdutoPS item3ProdutoPS";
@@ -110,11 +115,15 @@ body {
     .item3ProdutoPS {
         margin-top: 20px;
         grid-area: item3ProdutoPS;
-    }    
+    }
 
 }
 
 @media (max-width:800px) {
+
+    #primeiraSection {
+        margin-top: 10px;
+    }
 
     .containerPropagandaPrimeiraSection {
         flex-direction: column;
@@ -126,7 +135,7 @@ body {
     }
 
     .containerProdutosPrimeiraSection {
-        margin-top: 50px;        
+        margin-top: 50px;
     }
 
     .containerItemPropagandaPS {
@@ -150,11 +159,11 @@ body {
         width: 300px;
     }
 
-    .containerTextoPrimeiraSection>h1{
+    .containerTextoPrimeiraSection>h1 {
         font-size: 2em;
     }
 
-    .containerTextoPrimeiraSection>p{
+    .containerTextoPrimeiraSection>p {
         font-size: 1.8em;
     }
 
@@ -192,7 +201,7 @@ body {
     .containerTextoPropagandaPS {
         height: 40px;
     }
-    
+
 }
 
 @media (max-width:400px) {
@@ -266,7 +275,7 @@ body {
     font-size: 2em;
 }
 
-#inputSubmitColetaSS:hover{
+#inputSubmitColetaSS:hover {
     cursor: pointer;
 }
 
@@ -280,16 +289,16 @@ body {
     margin: auto;
 }
 
-#containerMensagemSS{
+#containerMensagemSS {
     width: 100px;
-    position: absolute;    
+    position: absolute;
     display: none;
     text-align: center;
-    font-weight: bold; 
-    color: #A52A2A;    
+    font-weight: bold;
+    color: #A52A2A;
 }
 
-.containerGifLoadingSS{
+.containerGifLoadingSS {
     width: 80px;
     margin: auto;
 }
