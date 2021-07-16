@@ -88,17 +88,6 @@ body {
     font-weight: bold;
 }
 
-#containerMensagemSS{
-    width: 100px;
-    position: absolute;
-    right: -2000px;    
-}
-
-.containerGifLoadingSS{
-    width: 80px;
-    margin: auto;
-}
-
 @media (max-width:1000px) {
 
     .containerLogoPrimeiraSection {
@@ -288,6 +277,21 @@ body {
 
 .containerImagemPropagandaSS {
     width: 300px;
+    margin: auto;
+}
+
+#containerMensagemSS{
+    width: 100px;
+    position: absolute;
+    bottom: -450px;
+    display: none;
+    text-align: center;
+    font-weight: bold; 
+    color: #A52A2A;    
+}
+
+.containerGifLoadingSS{
+    width: 80px;
     margin: auto;
 }
 
