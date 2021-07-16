@@ -125,6 +125,10 @@ body {
         width: 400px;
     }
 
+    .containerProdutosPrimeiraSection {
+        margin-top: 50px;        
+    }
+
     .containerItemPropagandaPS {
         width: 280px;
         height: 380px;
@@ -144,6 +148,14 @@ body {
 
     .containerLogoPrimeiraSection {
         width: 300px;
+    }
+
+    .containerTextoPrimeiraSection>h1{
+        font-size: 2em;
+    }
+
+    .containerTextoPrimeiraSection>p{
+        font-size: 1.8em;
     }
 
     .containerItemPropagandaPS {
@@ -168,7 +180,26 @@ body {
 
     .containerItemPropagandaPS {
         width: 200px;
-        height: 300px;
+        height: 240px;
+    }
+
+    .containerImagemPropagandaPS {
+        width: 150px;
+        height: 180px;
+        margin: auto;
+    }
+
+    .containerTextoPropagandaPS {
+        height: 40px;
+    }
+    
+}
+
+@media (max-width:400px) {
+
+    .containerItemPropagandaPS {
+        width: 200px;
+        height: 240px;
     }
 
     .containerImagemPropagandaPS {
@@ -182,7 +213,7 @@ body {
     }
 
     .containerTextoPropagandaPS>p {
-        font-size: 1em;
+        font-size: 0.8em;
     }
 }
 
