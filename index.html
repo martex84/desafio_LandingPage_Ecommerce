@@ -39,7 +39,7 @@
                 </div><!-- Div Secundária Texto -->
             </div>
             <!--Container Item Produto-->
-            <div class="containerItemPropagandaPS wallpaperTransparente item2ProdutoPS" >
+            <div class="containerItemPropagandaPS wallpaperTransparente item2ProdutoPS">
                 <div class="containerImagemPropagandaPS"><img src="assets/racaoGato.png" class="image"></div>
                 <div class="separadorItem"></div><!-- Separador -->
                 <div class="containerTextoPropagandaPS padraoCorSecundario">
@@ -68,7 +68,7 @@
             <!-- Container Texto Instrução Email -->
             <form id=formEmailColetaSS>
                 <input type="email" id="inputEmailColetaSS" placeholder="nome@email.com">
-                <input type="submit" id="inputSubmitColetaSS" value="Enviar">
+                <input type="submit" id="inputSubmitColetaSS" value="Enviar" onclick="enviaEmail()">
             </form>
             <!-- Form Email -->
         </div>
@@ -84,6 +84,16 @@
             <!-- Container Texto Propaganda Segunda Section -->
         </div>
         <!-- Container Propaganda Segunda Section -->
+        <div id="containerMensagemSS">
+            <div class="containerGifLoadingSS">
+                <img src="assets/loading.gif" class="image">
+            </div>
+            <div>
+                <p id="textoMensagemSS">Mensagem</p><!-- Texto Mensagem Email -->
+            </div><!-- Container Texto Mensagem Email-->
+            <!-- Container Gif Loading -->
+        </div>
+        <!-- Container Mensagem Email -->
     </section>
     <!--Section Recebimento Email-->
 
@@ -91,7 +101,7 @@
         <p> Todos dos Direitos Reservados </p>
     </footer>
 
-    <script src="js/script.js"></script>   
+    <script src="js/script.js"></script>
 
 </body>
 
