@@ -11,7 +11,7 @@
 * *País:* Brasil;
 
 # Imagem
-
+![Preview](https://github.com/martex84/desafio_LandingPage_Ecommerce/blob/cd648da42ff8979811c404527ee4cbe673fd2e5a/Preview.png)
 
 # Link Site
 <https://clever-haibt-88138e.netlify.app/>
