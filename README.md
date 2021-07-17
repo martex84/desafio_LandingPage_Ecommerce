@@ -11,7 +11,7 @@
 * *País:* Brasil;
 
 # Imagem
-![Preview](Preview.jpg)
+![Preview](preview.jpg)
 
 # Link Site
 <https://clever-haibt-88138e.netlify.app/>
