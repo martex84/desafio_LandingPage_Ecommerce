@@ -324,12 +324,49 @@ body {
 */
 
 #footerPrincipal {
-    height: 50px;
+    height: 60px;
+    padding: 5px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: rgba(169, 169, 169);
-    font-size: 1.2em;
+    font-size: 1em;
+}
+
+#footerPrincipal > div{
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+#footerPrincipal > div > p > span{
+    font-weight: 900;
+}
+
+.linkFooter,
+.linkFooter:link,
+.linkFooter:active{
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+.linkFooter:hover{
+    background-color: #006400;
+}
+
+.linkFooter > img{
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width:800px) {
+    #footerPrincipal{
+        height: 80px;
+        text-align: center;
+    }
 }
 
 /*
